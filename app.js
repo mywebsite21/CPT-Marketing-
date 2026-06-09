@@ -336,7 +336,7 @@ function renderAdmins(adminsData = mockAdmins) {
   adminsData.forEach((admin) => {
     let statusBadge = "";
     if (admin.status === "active") statusBadge = `<span class="badge badge-success">Active</span>`;
-    else if (admin.status === "pending") statusBadge = `<span class="badge badge-warning">Pending</span>`;
+    else if (admin.status === "pending") statusBadge = `<span class="badge badge-warning">Pending</>`;
     else statusBadge = `<span class="badge badge-danger">Blocked</span>`;
 
     const tr = document.createElement("tr");
